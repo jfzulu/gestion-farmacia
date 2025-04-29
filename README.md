@@ -1,73 +1,79 @@
-# Welcome to your Lovable project
+# Gestión de Farmacia
 
-## Project info
+## Descripción del Proyecto
 
-**URL**: https://lovable.dev/projects/8e5ae02d-7b83-4ab2-8a1c-c8e93f5242a7
+Este proyecto es una aplicación web diseñada para la gestión integral de una farmacia. Permite administrar clientes, inventario, proveedores, ventas e informes de manera eficiente y centralizada. La aplicación está desarrollada utilizando tecnologías modernas como React, TypeScript y Tailwind CSS, lo que garantiza un rendimiento óptimo y una experiencia de usuario intuitiva.
 
-## How can I edit this code?
+## Tecnologías Utilizadas
 
-There are several ways of editing your application.
+- **Vite**: Herramienta de construcción rápida y moderna.
+- **TypeScript**: Lenguaje de programación con tipado estático.
+- **React**: Biblioteca para construir interfaces de usuario.
+- **Tailwind CSS**: Framework de utilidades CSS para estilos rápidos y consistentes.
+- **shadcn-ui**: Componentes de interfaz de usuario reutilizables.
 
-**Use Lovable**
+## Instalación y Configuración
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8e5ae02d-7b83-4ab2-8a1c-c8e93f5242a7) and start prompting.
+Sigue los pasos a continuación para configurar el proyecto en tu entorno local:
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clona el repositorio:
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
+   ```
 
-**Use your preferred IDE**
+2. Navega al directorio del proyecto:
+   ```bash
+   cd gestion-farmacia
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. Instala las dependencias necesarias:
+   ```bash
+   npm install
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+4. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
 
-Follow these steps:
+El servidor estará disponible en `http://localhost:3000` o el puerto configurado.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Estructura del Proyecto
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **`src/components/ui/`**: Componentes reutilizables como botones, formularios, tablas, etc.
+- **`src/pages/`**: Páginas principales de la aplicación (Clientes, Inventario, Ventas, etc.).
+- **`src/hooks/`**: Hooks personalizados para lógica reutilizable.
+- **`src/lib/`**: Utilidades y configuración global.
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Despliegue
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+Para desplegar la aplicación, puedes utilizar cualquier servicio de hosting compatible con aplicaciones web modernas, como Vercel o Netlify. Asegúrate de construir el proyecto antes de desplegarlo:
+
+```bash
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+Esto generará una carpeta `dist/` lista para producción.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Contribución
 
-**Use GitHub Codespaces**
+Si deseas contribuir al proyecto, sigue estos pasos:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Haz un fork del repositorio.
+2. Crea una nueva rama para tu funcionalidad o corrección de errores:
+   ```bash
+   git checkout -b nombre-de-tu-rama
+   ```
+3. Realiza tus cambios y haz un commit:
+   ```bash
+   git commit -m "Descripción de los cambios"
+   ```
+4. Envía tus cambios al repositorio remoto:
+   ```bash
+   git push origin nombre-de-tu-rama
+   ```
+5. Abre un Pull Request en GitHub.
 
-## What technologies are used for this project?
+## Licencia
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/8e5ae02d-7b83-4ab2-8a1c-c8e93f5242a7) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
